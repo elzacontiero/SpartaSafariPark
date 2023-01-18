@@ -7,6 +7,9 @@ public class Vehicle {
     private int capacity = 4;
 
     public Vehicle() {} // Why do we need the default constructor if we have the other constructors?
+    // We don't really need this one. Bare minimum!
+    // Future proof.
+
 
     public Vehicle(int capacity, int speed) {
         this.capacity = capacity;

@@ -1,5 +1,8 @@
 package com.sparta.ec.safaripark;
 
+import com.sparta.ec.safaripark.polymorphism.Camera;
+import com.sparta.ec.safaripark.polymorphism.Hunter;
+
 public class App
 {
     public static void main( String[] args )
