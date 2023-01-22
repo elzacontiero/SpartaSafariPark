@@ -10,21 +10,28 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class VehicleTest {
 
     @Test
-    @DisplayName("Test speed")
-    public void speedTest() {
+    @DisplayName("Test speed 1")
+    public void speedTest1() {
         // 1st constructor: Default speed is 10
         Vehicle v = new Vehicle();
         Assertions.assertEquals(10, v.getSpeed());
+    }
 
+    @Test
+    @DisplayName("Test speed 2")
+    public void speedTest2() {
         // 2nd constructor
-        v = new Vehicle(4, 6);// capacity=4, speed=6
-
+        Vehicle v = new Vehicle(4, 6);// capacity=4, speed=6
         // Assert that the expected speed is what we get from
         // getter v.getSpeed()
         Assertions.assertEquals(6, v.getSpeed());
+    }
 
+    @Test
+    @DisplayName("Test speed 3")
+    public void speedTest3() {
         // 3rd constructor
-        v = new Vehicle(4, 7, 12, 5);
+        Vehicle v = new Vehicle(4, 7, 12, 5);
         Assertions.assertEquals(5, v.getSpeed());
     }
 

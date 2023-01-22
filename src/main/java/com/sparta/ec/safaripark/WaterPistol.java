@@ -1,4 +1,4 @@
-package com.sparta.ec.safaripark.polymorphism;
+package com.sparta.ec.safaripark;
 
 public class WaterPistol extends Weapon {
     public WaterPistol(String brand) {

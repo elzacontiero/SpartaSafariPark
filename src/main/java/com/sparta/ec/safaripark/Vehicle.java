@@ -1,15 +1,12 @@
 package com.sparta.ec.safaripark;
 
-public class Vehicle {
+public class Vehicle implements IMovable {
     private int speed = 10;
     private int position;
     private int numPassengers;
     private int capacity = 4;
 
-    public Vehicle() {} // Why do we need the default constructor if we have the other constructors?
-    // We don't really need this one. Bare minimum!
-    // Future proof.
-
+    public Vehicle() {}
 
     public Vehicle(int capacity, int speed) {
         this.capacity = capacity;
@@ -46,14 +43,13 @@ public class Vehicle {
         return capacity;
     }
 
-    // Move the vehicle by a number of times.
+    @Override
     public String move(int times) {
-        position += (times*speed); // increase the position by (times*speed)
+        position += (times*speed);
         return "Moving along " + times + " times";
     }
 
-
-    // Moves the position by 1 speed.
+    @Override
     public String move() {
         position += speed;
         return "Moving along";

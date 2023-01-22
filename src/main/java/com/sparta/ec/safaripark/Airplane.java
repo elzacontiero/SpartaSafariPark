@@ -17,22 +17,24 @@ public class Airplane extends Vehicle {
         return airline;
     }
 
+    // ascends increases the altitude by distance meters
     public void ascend(int distance) {
-        altitude += distance; // ascends increases the altitude by distance meters
+        altitude += distance;
     }
 
+    // descend diminishes the altitude by 'distance' meters
     public void descend(int distance) {
-        altitude -= distance; // descend diminishes the altitude by 'distance' meters
+        altitude -= distance;
     }
 
     @Override
     public String move() {
-        return "Moving along at an altitude of " + altitude + " metres.";
+        return super.move() + " at an altitude of " + altitude + " metres.";
     }
 
     @Override
     public String move(int times) {
-        return "Moving along " + times + " times at an altitude of " + altitude + " metres.";
+        return super.move() + " at an altitude of " + altitude + " metres.";
     }
 
     @Override

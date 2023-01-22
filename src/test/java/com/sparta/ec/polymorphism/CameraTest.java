@@ -1,7 +1,7 @@
 package com.sparta.ec.polymorphism;
 
 
-import com.sparta.ec.safaripark.polymorphism.Camera;
+import com.sparta.ec.safaripark.Camera;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

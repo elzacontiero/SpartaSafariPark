@@ -1,13 +1,13 @@
-package com.sparta.ec.safaripark.polymorphism;
+package com.sparta.ec.safaripark;
 
 public class LaserGun extends Weapon {
     public LaserGun(String brand) {
-        super(brand);
+        super("LaserGun - " + brand);
     }
 
     @Override
     public String shoot() {
-        return "Zing!! Shooting a LaserGun - " + brand;
+        return "Zing!! " + super.shoot();
     }
 
     @Override

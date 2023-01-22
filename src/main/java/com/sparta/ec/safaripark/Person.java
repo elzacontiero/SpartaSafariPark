@@ -1,7 +1,6 @@
 package com.sparta.ec.safaripark;
 
-public class Person {
-
+public class Person implements IMovable {
     private String firstName = "";
     private String lastName = "";
     private int age;
@@ -18,9 +17,6 @@ public class Person {
         this.firstName = firstName;
     }
 
-
-    // This is an example of constructor overloading ---> Refer to polymorphism
-
     public String getFullName() {
         return firstName + " " + lastName;
     }
@@ -33,7 +29,6 @@ public class Person {
         if (age >= 0) {
             this.age = age;
         }
-
     }
 
     @Override

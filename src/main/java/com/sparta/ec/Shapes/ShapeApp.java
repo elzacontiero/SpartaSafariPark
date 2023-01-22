@@ -1,28 +1,27 @@
 package com.sparta.ec.Shapes;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ShapeApp {
     public static void main(String[] args) {
-        // Shape s = new Shape(); Error shape is abstract.
-
-        var myRec = new Rectangle(7.2, 3.0);
+        var myRec = new Rectangle(3.2, 3.0);
         System.out.println(myRec.calculateArea());
-        var circle = new Circle(2.0);
+        var circle = new Circle(5.0);
         System.out.println(circle.calculateArea());
 
-//
-//        List<Shape> myShapes = new ArrayList<>();
-//        myShapes.add(myRec);
-//        myShapes.add(myCircle);
-//        myShapes.add(new Circle (myRec);
-//        System.out.println("Demo of polymorphism");
-//        for (Shape s: myShapes) {
-//            System.out.println(s.calculateArea());
-//       }
+        List<Shape> myShapes = new ArrayList<>();
 
+        myShapes.add(myRec);
+        myShapes.add(circle);
+        myShapes.add(new Circle(4.0));
+        System.out.println("Demo of polymorphism");
 
+        for (Shape s : myShapes) {
+            System.out.println(s.calculateArea());
+        }
     }
-
 }
 
 

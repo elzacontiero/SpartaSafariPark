@@ -1,9 +1,9 @@
-package com.sparta.ec.safaripark.polymorphism;
+package com.sparta.ec.safaripark;
 
 public class Camera implements IShootable {
     String brand;
 
-    public Camera(String brand) { //Constructor, same name Class.
+    public Camera(String brand) {
         this.brand = brand;
     }
 
@@ -13,7 +13,7 @@ public class Camera implements IShootable {
     }
 
     @Override
-    public String toString() { // double click inside Camera, then generate.
+    public String toString() {
         return "Camera{" +
                 "brand='" + brand + '\'' +
                 '}';
