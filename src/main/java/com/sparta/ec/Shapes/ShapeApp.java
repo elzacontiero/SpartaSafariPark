@@ -26,5 +26,3 @@ public class ShapeApp {
 
 
 
-// she said i had to commit to go to the version control?
-// Ok, open the IntelliJ terminal and we will commit 

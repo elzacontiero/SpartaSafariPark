@@ -13,6 +13,7 @@ public class Person implements IMovable {
         this.lastName = lastName;
         setAge(age);
     }
+
     public Person(String firstName) {
         this.firstName = firstName;
     }
@@ -38,5 +39,14 @@ public class Person implements IMovable {
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public String move() {
+        return getFullName() + " is moving";
+    }
+    @Override
+    public String move(int times) {
+        return getFullName() + " is moving " + times + " times";
     }
 }
