@@ -15,6 +15,6 @@ public class HunterTest {
         Hunter h = new Hunter("Top","Gun", 66, s);
         Assertions.assertEquals("Top Gun is Zing!! Shooting a LaserGun - ACME", h.shoot());
         Assertions.assertEquals("Person{firstName='Top', lastName='Gun', age=66} LaserGun{brand='LaserGun - ACME'}", h.toString());
-        Assertions.assertEquals("Person is moving...", h.move());
+        Assertions.assertEquals("Top Gun is moving", h.move());
     }
 }
