@@ -1,5 +1,4 @@
 package com.sparta.ec.enums;
-// Enums exist on their own.
 
 public class Enum {
 
@@ -14,8 +13,7 @@ public class Enum {
 
         if (dayOfWeek == DayIndex.SATURDAY || dayOfWeek == DayIndex.SUNDAY) {
             System.out.println("It is the weekend.");
-
-        } else{
+        } else {
             System.out.println("It is a weekday.");
         }
 
@@ -23,9 +21,6 @@ public class Enum {
         System.out.println("Size: " + chosenSize.getPizzaSize());
         System.out.println("Calories: " + chosenSize.getPizzaCalories());
         System.out.println("Energy: " + chosenSize.getEnergyInJoules());
-
-
-        System.out.println();
 
     }
 }

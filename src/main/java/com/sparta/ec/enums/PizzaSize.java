@@ -2,7 +2,10 @@ package com.sparta.ec.enums;
 
 
     public enum PizzaSize {
-        SMALL("Small pizza", 500), MEDIUM("Medium pizza", 620), LARGE("Large pizza", 900), EXTRALARGE("Extra large pizza", 1150);
+        SMALL("Small pizza", 500),
+        MEDIUM("Medium pizza", 620),
+        LARGE("Large pizza", 900),
+        EXTRALARGE("Extra large pizza", 1150);
 
         // Fields
         private final String pizzaSize;
