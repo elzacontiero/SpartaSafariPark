@@ -72,13 +72,26 @@ public class CollectionsLabHomeworkTest {
 
     }
 
-    // Test for countDigits
+    @Test
+    @DisplayName("Test 1st version of countDigits")
+    public void testCountDigitsExercise1() {
+        String input = "abcd42_3421";
+        var result = CollectionsLabHomework.countDigits(input);
+        Assertions.assertEquals(4, result.size());
+
+        Assertions.assertEquals(1, result.get('1'));
+        Assertions.assertEquals(2, result.get('2'));
+        Assertions.assertEquals(1, result.get('3'));
+        Assertions.assertEquals(2, result.get('4'));
+    }
+
+    // Test for countDigits version 2
     @Test
     @DisplayName("Test for the number of characters in the String")
-    public void testCountDigits(){
+    public void testCountDigitsExercise2(){
         String input = "There are 3 cats in 5 different boxes inside 1 big container";
 
-        int result = CollectionsLabHomework.countDigits(input);
+        int result = CollectionsLabHomework.countDigitsExercise2(input);
 
         Assertions.assertEquals(3,result);
     }

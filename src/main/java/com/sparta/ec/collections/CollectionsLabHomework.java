@@ -1,13 +1,14 @@
 package com.sparta.ec.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
 
 public class CollectionsLabHomework {
 
-    // Ex.1 (HashSet)
+    // Ex.1 LAB (HashSet)
     public static HashSet<Integer> makeFiveSet(int max){
 
         HashSet<Integer> result = new HashSet<>();
@@ -20,7 +21,7 @@ public class CollectionsLabHomework {
     }
 
 
-    // Ex.2 (ArrayList)
+    // Ex.2 LAB (ArrayList)
     public static List<String> longWordList(String phrase){
           ArrayList<String> result = new ArrayList<>();
         String[] words = phrase.split(" ");
@@ -33,18 +34,38 @@ public class CollectionsLabHomework {
         return result;
     }
 
-    //Ex.3
+    //Ex.3 LAB (HashMap)
 
-    public static int countDigits(String input){
+    /* Keep a count of how many times each digit occurs. So, how many 0s, how many 1s,
+    how many 2s...and return this HashMap.*/
+
+    // Goal: Analyse the character frequency only for digits and return this frequency.
+    public static HashMap<Character, Integer> countDigits(String input) {
+
+        HashMap<Character,Integer> result = new HashMap<>();
+        for(Character c : input.toCharArray()) { // String not iterable, transform to char[]
+            if(Character.isDigit(c)) {
+
+                if(result.containsKey(c)) {
+                    Integer n = result.get(c) +1;
+                    result.put(c,n);
+
+                } else {
+                    result.put(c,1);
+                }
+            }
+
+        }
+        return result;
+    }
+
+
+    // Version 2 - If we want to only count how many times any digit occurs in the input.
+    public static int countDigitsExercise2(String input){
 
         int count = 0;
-        /* each character is of type char.Input is not iterable, because you can't loop over
-        a String, then convert String toCharArray()
-        */
-
         for (char c : input.toCharArray()){
-            // static method isDigit is available in class Character.
-            if(Character.isDigit(c)){ // if digit increment count.
+            if(Character.isDigit(c)){
                 count++;
             }
         }
