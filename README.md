@@ -1,7 +1,7 @@
 # Sparta Safari Park
 
-The project contains a number of subpackages related to different aspects of Java develpment taught 
-in the Sparta Bootcamp. 
+The project contains a number of subpackages related to different aspects of Java development taught 
+at Sparta Bootcamp. 
 
 The base package is `com.sparta.ec`, where the subpackages are located.
 
